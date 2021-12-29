@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Shizuru&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="signin.css">
+    <title>CGPA Calculator</title>
+  </head>
+  <body>
+
+    <div class=".sub_select">
+
+      <div class=".heading">
+        <h1>Calculate Your CGPA Here</h1>
+      </div>
+      <div class="table_div">
+        <table class="table">
+          <tr>
+            <th>Subjects</th>
+            <th>Select Grade</th>
+          </tr>
+
+          <tr>
+            <td>CST203</td>
+            <td>
+              <select class="grade" name="grade" id="sub 1">
+                <option value="Select">Select</option>
+                <option value="AA">AA</option>
+                <option value="AB">AB</option>
+                <option value="BB">BB</option>
+                <option value="BC">BC</option>
+                <option value="CC">CC</option>
+                <option value="CD">CD</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>ECT201</td>
+            <td>
+              <select class="grade" name="grade" id="sub 2">
+                <option value="Select">Select</option>
+                <option value="AA">AA</option>
+                <option value="AB">AB</option>
+                <option value="BB">BB</option>
+                <option value="BC">BC</option>
+                <option value="CC">CC</option>
+                <option value="CD">CD</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>ECT203</td>
+            <td>
+              <select class="grade" name="grade" id="sub 3">
+                <option value="Select">Select</option>
+                <option value="AA">AA</option>
+                <option value="AB">AB</option>
+                <option value="BB">BB</option>
+                <option value="BC">BC</option>
+                <option value="CC">CC</option>
+                <option value="CD">CD</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>ECT205</td>
+            <td>
+              <select class="grade" name="grade" id="sub 4">
+                <option value="Select">Select</option>
+                <option value="AA">AA</option>
+                <option value="AB">AB</option>
+                <option value="BB">BB</option>
+                <option value="BC">BC</option>
+                <option value="CC">CC</option>
+                <option value="CD">CD</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>ECT207</td>
+            <td>
+              <select class="grade" name="grade" id="sub 5">
+                <option value="Select">Select</option>
+                <option value="AA">AA</option>
+                <option value="AB">AB</option>
+                <option value="BB">BB</option>
+                <option value="BC">BC</option>
+                <option value="CC">CC</option>
+                <option value="CD">CD</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>MAT201</td>
+            <td>
+              <select class="grade" name="grade" id="sub 6">
+                <option value="Select">Select</option>
+                <option value="AA">AA</option>
+                <option value="AB">AB</option>
+                <option value="BB">BB</option>
+                <option value="BC">BC</option>
+                <option value="CC">CC</option>
+                <option value="CD">CD</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>CSP203</td>
+            <td>
+              <select class="grade" name="grade" id="sub 7">
+                <option value="Select">Select</option>
+                <option value="AA">AA</option>
+                <option value="AB">AB</option>
+                <option value="BB">BB</option>
+                <option value="BC">BC</option>
+                <option value="CC">CC</option>
+                <option value="CD">CD</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>CSP211</td>
+            <td>
+              <select class="grade" name="grade" id="sub 8">
+                <option value="Select">Select</option>
+                <option value="AA">AA</option>
+                <option value="AB">AB</option>
+                <option value="BB">BB</option>
+                <option value="BC">BC</option>
+                <option value="CC">CC</option>
+                <option value="CD">CD</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>ECP201</td>
+            <td>
+              <select class="grade" name="grade" id="sub 9">
+                <option value="Select">Select</option>
+                <option value="AA">AA</option>
+                <option value="AB">AB</option>
+                <option value="BB">BB</option>
+                <option value="BC">BC</option>
+                <option value="CC">CC</option>
+                <option value="CD">CD</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>ECP203</td>
+            <td>
+              <select class="grade" name="grade" id="sub 10">
+                <option value="Select">Select</option>
+                <option value="AA">AA</option>
+                <option value="AB">AB</option>
+                <option value="BB">BB</option>
+                <option value="BC">BC</option>
+                <option value="CC">CC</option>
+                <option value="CD">CD</option>
+              </select>
+            </td>
+          </tr>
+
+        </table>
+      </div>
+
+      <form class="" action="index.html" method="post">
+        <input type="button"  value="Submit" onclick="myfun()" class="btn">
+      </form>
+        <div class="output">
+          <output name="result" id="out">You Scored:______</output>
+        </div>
+
+    </div>
+
+    <script src="index.js" charset="utf-8"></script>
+  </body>
+
+</html>
