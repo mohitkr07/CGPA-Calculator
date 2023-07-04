@@ -1,11 +1,11 @@
 function myfun() {
   var score = 0;
   var credit = 0;
-  for (var i = 0; i < 11; i++) {
+  for (var i = 0; i < 9; i++) {
     var g = document.querySelectorAll(".grade")[i];
     var x = g.selectedIndex;
 
-    if (i < 6) {
+    if (i < 4) {
       credit += 3;
       switch (x) {
         case 0:
@@ -39,44 +39,41 @@ function myfun() {
           score = score + 4 * 3;
           break;
       }
-    }
+    } else if (i == 4) {
+      credit += 6;
+      switch (x) {
+        case 0:
+          credit += -2;
+          break;
+        case 1:
+          score = score + 10 * 6;
+          break;
 
-    // else if (i == 7) {
-    //   credit += 2;
-    //   switch (x) {
-    //     case 0:
-    //       credit += -2;
-    //       break;
-    //     case 1:
-    //       score = score + 10 * 2;
-    //       break;
+        case 2:
+          score = score + 9 * 6;
+          break;
 
-    //     case 2:
-    //       score = score + 9 * 2;
-    //       break;
+        case 3:
+          score = score + 8 * 6;
+          break;
 
-    //     case 3:
-    //       score = score + 8 * 2;
-    //       break;
+        case 4:
+          score = score + 7 * 6;
+          break;
 
-    //     case 4:
-    //       score = score + 7 * 2;
-    //       break;
+        case 5:
+          score = score + 6 * 6;
+          break;
 
-    //     case 5:
-    //       score = score + 6 * 2;
-    //       break;
+        case 6:
+          score = score + 5 * 6;
+          break;
 
-    //     case 6:
-    //       score = score + 5 * 2;
-    //       break;
-
-    //     case 7:
-    //       score = score + 4 * 3;
-    //       break;
-    //   }
-    // }
-    else {
+        case 7:
+          score = score + 4 * 6;
+          break;
+      }
+    } else {
       credit += 1;
       switch (x) {
         case 0:
